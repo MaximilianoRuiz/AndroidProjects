@@ -43,4 +43,9 @@ public class InitActivity extends Activity {
 		Intent intent = new Intent(this, LenguajeActivity.class);
 		startActivity(intent);
 	}
+	
+	public void callToastActivity(View view) {
+		Intent intent = new Intent(this, ToastActivity.class);
+		startActivity(intent);
+	}
 }

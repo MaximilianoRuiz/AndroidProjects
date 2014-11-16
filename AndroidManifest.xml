@@ -40,7 +40,15 @@
         </activity>
         <activity
             android:name=".LenguajeActivity"
-            android:label="@string/title_activity_lenguaje" 
+            android:label="@string/title_activity_lenguaje"
+            android:parentActivityName=".InitActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.InitActivity" />
+        </activity>
+        <activity
+            android:name=".ToastActivity"
+            android:label="@string/title_activity_toast" 
             android:parentActivityName=".InitActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

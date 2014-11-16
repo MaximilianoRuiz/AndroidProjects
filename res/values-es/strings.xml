@@ -11,5 +11,11 @@
     <string name="title_activity_init">Elige tu Actividad</string>
     <string name="message_activity">Enviar Mensaje</string>
     <string name="lenguaje_activity">Elegir Lenguaje</string>
+    <string name="title_activity_lenguaje">Actividad Lenguaje</string>
+    <string name="title_activity_toast">Actividad Toast</string>
+    <string name="simple_toast">Toast Simple</string>
+    <string name="toast_activity">Actividad Toast</string>
+    <string name="gravity_toast">Toast con Gravedad</string>
+    
 
 </resources>

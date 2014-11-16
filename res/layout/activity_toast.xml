@@ -6,36 +6,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.myfirstapp.InitActivity"
-    android:background="@drawable/background3">
-    
-     
+    tools:context="com.example.myfirstapp.ToastActivity" >
 
     <Button
-        android:id="@+id/message"
+        android:id="@+id/buttonToast1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/message_activity" 
-        android:onClick="callMainActivity"/>
-
+        android:text="@string/simple_toast"
+        android:onClick="showSimpleToast"/>
     <Button
-        android:id="@+id/lenguaje"
+        android:id="@+id/buttonToast2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/message"
-        android:text="@string/lenguaje_activity" 
-        android:onClick="callLenguajeActivity"/>
-    
+        android:layout_below="@+id/buttonToast1"
+        android:text="@string/gravity_toast"
+        android:onClick="showGravityToast"/>
     <Button
-        android:id="@+id/toast"
+        android:id="@+id/buttonToast3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/lenguaje"
-        android:text="@string/toast_activity" 
-        android:onClick="callToastActivity"/>
+        android:layout_below="@+id/buttonToast2"
+        android:text="@string/gravity_toast"
+        android:onClick="showLayoutToast"/>
 
 </RelativeLayout>

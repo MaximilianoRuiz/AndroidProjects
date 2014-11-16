@@ -12,5 +12,9 @@
     <string name="message_activity">Send a Message</string>
     <string name="lenguaje_activity">Chouse a Lenguaje</string>
     <string name="title_activity_lenguaje">Lenguaje Activity</string>
+    <string name="title_activity_toast">Toast Activity</string>
+    <string name="simple_toast">Simple Toast</string>
+    <string name="toast_activity">Toast Activity</string>
+    <string name="gravity_toast">Gravity Toast</string>
 
 </resources>
