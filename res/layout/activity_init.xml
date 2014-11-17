@@ -45,6 +45,15 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/toast"
         android:text="@string/title_activity_life_cycle" 
-        android:onClick="callLifeCycle"/>
+        android:onClick="callLifeCycleActivity"/>
+     
+     <Button
+        android:id="@+id/built"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lifecycle"
+        android:text="@string/title_activity_built_app" 
+        android:onClick="callBuiltActivity"/>
 
 </RelativeLayout>
