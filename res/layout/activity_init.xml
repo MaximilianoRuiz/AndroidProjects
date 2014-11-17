@@ -37,5 +37,14 @@
         android:layout_below="@+id/lenguaje"
         android:text="@string/toast_activity" 
         android:onClick="callToastActivity"/>
+    
+     <Button
+        android:id="@+id/lifecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toast"
+        android:text="@string/title_activity_life_cycle" 
+        android:onClick="callLifeCycle"/>
 
 </RelativeLayout>

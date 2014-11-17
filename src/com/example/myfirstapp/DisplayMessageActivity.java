@@ -32,7 +32,6 @@ public class DisplayMessageActivity extends ActionBarActivity {
 	    
 	    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
 	}
 
 	@Override

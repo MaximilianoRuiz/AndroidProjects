@@ -1,24 +1,24 @@
 package com.example.myfirstapp;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.Toast;
 
-public class InitActivity extends Activity {
+public class LifeCycle extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_init);
+		setContentView(R.layout.activity_life_cycle);
+		showStatus("onCreate");
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.init, menu);
+		getMenuInflater().inflate(R.menu.life_cycle, menu);
 		return true;
 	}
 
@@ -34,23 +34,35 @@ public class InitActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void callMainActivity(View view) {
-    	Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-	
-	public void callLenguajeActivity(View view) {
-		Intent intent = new Intent(this, LenguajeActivity.class);
-		startActivity(intent);
+	public void onStart() {
+		super.onStart();
+		showStatus("onStart");
 	}
 	
-	public void callToastActivity(View view) {
-		Intent intent = new Intent(this, ToastActivity.class);
-		startActivity(intent);
+	public void onResume() {
+		super.onResume();
+		showStatus("onResume");
 	}
 	
-	public void callLifeCycle(View view) {
-		Intent intent = new Intent(this, LifeCycle.class);
-		startActivity(intent);
+	public void onPause() {
+		super.onPause();
+		showStatus("onPause");
+	}
+	
+	public void onStop() {
+		super.onStop();
+		showStatus("onStop");
+	}
+	
+	public void onDestroy() {
+		super.onDestroy();
+		showStatus("onDestroy");
+	}
+	
+	public void showStatus(String str) {
+		Toast toast;
+		toast= Toast.makeText(this, str, Toast.LENGTH_SHORT);
+		toast.show();
+		
 	}
 }

@@ -16,5 +16,6 @@
     <string name="simple_toast">Simple Toast</string>
     <string name="toast_activity">Toast Activity</string>
     <string name="gravity_toast">Gravity Toast</string>
+    <string name="title_activity_life_cycle">Life Cycle</string>
 
 </resources>
