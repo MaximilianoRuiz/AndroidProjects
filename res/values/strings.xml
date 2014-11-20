@@ -20,6 +20,7 @@
     <string name="title_activity_built_app">Built App</string>
     <string name="browser">Browser</string>
     <string name="make_call">Make Call</string>
-    
+    <string name="notification">Notification</string>
+    <string name="title_activity_notification">Notification Activity</string>
 
 </resources>

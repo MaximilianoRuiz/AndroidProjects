@@ -1,6 +1,9 @@
 package com.example.myfirstapp;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class InitActivity extends Activity {
+	int notificationID = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +61,23 @@ public class InitActivity extends Activity {
 	public void callBuiltActivity(View view) {
 		Intent intent = new Intent(this, BuiltApp.class);
 		startActivity(intent);
+	}
+	
+	public void callNotification(View v) {
+		Intent i = new Intent(this, NotificationActivity.class);
+		i.putExtra("notificationID", notificationID);
+		PendingIntent pIntent = PendingIntent.getActivity(this, 0, i, 0);
+		
+		Notification noti = new Notification.Builder(this)
+							.setTicker("Tienes una Notificación")
+							.setContentTitle("Notificación")
+							.setContentText("Click para ver la Notificación")
+							.setSmallIcon(R.drawable.ic_launcher)
+							.setContentIntent(pIntent).build();
+		
+		noti.flags = Notification.FLAG_AUTO_CANCEL;
+    	
+    	NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+    	manager.notify(notificationID, noti);
 	}
 }

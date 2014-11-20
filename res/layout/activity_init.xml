@@ -55,5 +55,14 @@
         android:layout_below="@+id/lifecycle"
         android:text="@string/title_activity_built_app" 
         android:onClick="callBuiltActivity"/>
+     
+     <Button
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/built"
+        android:text="@string/notification" 
+        android:onClick="callNotification"/>
 
 </RelativeLayout>
