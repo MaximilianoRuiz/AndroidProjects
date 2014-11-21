@@ -22,5 +22,11 @@
     <string name="make_call">Make Call</string>
     <string name="notification">Notification</string>
     <string name="title_activity_notification">Notification Activity</string>
+    <string name="big_text">Big Text</string>
+    <string name="big_picture">Big Picture</string>
+    <string name="in_box">In Box</string>
+    <string name="noti_botones">Buttons</string>
+    <string name="priorities">Priorities</string>
+    <string name="led">Leds</string>
 
 </resources>
