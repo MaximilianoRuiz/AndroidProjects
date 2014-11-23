@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -122,6 +123,30 @@ public class NotificationActivity extends Activity {
 		notification.flags = Notification.FLAG_AUTO_CANCEL;
 		NotificationManager manager = (NotificationManager) this.getSystemService(NOTIFICATION_SERVICE);
 		manager.notify(63612, notification);
+	}
+	
+	public void notiButton(View v) {
+		Intent i = new Intent();
+		PendingIntent pIntent = PendingIntent.getActivity(this, 0, i, 0);
+		Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+		
+		Notification noti = new Notification.Builder(this)
+							.setWhen(System.currentTimeMillis())
+							.setTicker("Notification Buttons")
+							.setLargeIcon(bmp)
+							.setContentTitle("Notificación")
+							.setContentText("Click one Option")
+							.setContentInfo("Noti")
+							.setSmallIcon(R.drawable.ic_launcher)
+							.setLights(Color.RED, 1, 0)
+							.addAction(R.drawable.ic_action_share, "Share", pIntent)
+							.addAction(R.drawable.ic_action_call, "Call", pIntent)
+							.setContentIntent(pIntent).build();
+		
+		noti.flags = Notification.FLAG_AUTO_CANCEL;
+    	
+    	NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+    	manager.notify(0, noti);
 	}
 
 }

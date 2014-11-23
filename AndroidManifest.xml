@@ -72,11 +72,15 @@
         </activity>
         <activity
             android:name=".NotificationActivity"
-            android:label="@string/title_activity_notification" 
-			android:parentActivityName=".InitActivity" >
+            android:label="@string/title_activity_notification"
+            android:parentActivityName=".InitActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.InitActivity" />
+        </activity>
+        <activity
+            android:name=".SelectButtons"
+            android:label="@string/title_activity_select_buttons" >
         </activity>
     </application>
 

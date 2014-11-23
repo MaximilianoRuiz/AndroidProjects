@@ -88,4 +88,9 @@ public class InitActivity extends Activity {
     	NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
     	manager.notify(notificationID, noti);
 	}
+	
+	public void callSelectBtns(View view) {
+		Intent intent = new Intent(this, SelectButtons.class);
+		startActivity(intent);
+	}
 }

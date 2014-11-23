@@ -64,5 +64,14 @@
         android:layout_below="@+id/built"
         android:text="@string/notification" 
         android:onClick="callNotification"/>
+     
+     <Button
+        android:id="@+id/selection_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/notification"
+        android:text="@string/selection_buttons" 
+        android:onClick="callSelectBtns"/>
 
 </RelativeLayout>
