@@ -28,5 +28,7 @@
     <string name="noti_botones">Buttons</string>
     <string name="title_activity_select_buttons">Select Buttons</string>
     <string name="selection_buttons">Selection Buttons</string>
+    <string name="title_activity_time_picker">Time Picker</string>
+    
 
 </resources>

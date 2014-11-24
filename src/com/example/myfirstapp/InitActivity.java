@@ -93,4 +93,9 @@ public class InitActivity extends Activity {
 		Intent intent = new Intent(this, SelectButtons.class);
 		startActivity(intent);
 	}
+	
+	public void callTimePicker(View view) {
+		Intent intent = new Intent(this, MyTimePicker.class);
+		startActivity(intent);
+	}
 }

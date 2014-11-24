@@ -73,5 +73,14 @@
         android:layout_below="@+id/notification"
         android:text="@string/selection_buttons" 
         android:onClick="callSelectBtns"/>
+     
+     <Button
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/selection_buttons"
+        android:text="@string/title_activity_time_picker" 
+        android:onClick="callTimePicker"/>
 
 </RelativeLayout>

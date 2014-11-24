@@ -82,6 +82,10 @@
             android:name=".SelectButtons"
             android:label="@string/title_activity_select_buttons" >
         </activity>
+        <activity
+            android:name=".MyTimePicker"
+            android:label="@string/title_activity_time_picker" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
