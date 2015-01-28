@@ -86,6 +86,10 @@
             android:name=".MyTimePicker"
             android:label="@string/title_activity_time_picker" >
         </activity>
+        <activity
+            android:name=".SimpleList"
+            android:label="@string/title_activity_simple_list" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

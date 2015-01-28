@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class SelectButtons extends Activity {
@@ -16,6 +18,8 @@ public class SelectButtons extends Activity {
 	CheckBox check1, check2, check3;
 	RadioButton rbdButton1,rbdButton2, rbdButton3;
 	String text1, text2;
+	String [] array;
+	Spinner spinner;
 	
 
 	@Override
@@ -31,6 +35,10 @@ public class SelectButtons extends Activity {
 		rbdButton2 = (RadioButton) findViewById(id.radio2);
 		rbdButton3 = (RadioButton) findViewById(id.radio3);
 		
+		spinner = (Spinner) findViewById(id.spinner);
+		array = getResources().getStringArray(R.array.array_object);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, array);
+		spinner.setAdapter(adapter);
 	}
 
 	@Override

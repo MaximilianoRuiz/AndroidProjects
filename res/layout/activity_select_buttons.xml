@@ -69,6 +69,15 @@
             android:text="Sr" 
             android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
+    
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="16dp"
+        />
 
     <TextView
         android:id="@+id/textView1"

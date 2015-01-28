@@ -29,6 +29,15 @@
     <string name="title_activity_select_buttons">Select Buttons</string>
     <string name="selection_buttons">Selection Buttons</string>
     <string name="title_activity_time_picker">Time Picker</string>
+    <string name="title_activity_simple_list">Simple List</string>
     
+    <string-array name="array_object">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
 
 </resources>
